@@ -1,20 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# NetShape - Traffic Shaping Simulator
 
-# Run and deploy your AI Studio app
+A complete, beginner-friendly Computer Networks mini-project designed to simulate and explain **Leaky Bucket** and **Token Bucket** traffic shaping algorithms.
 
-This contains everything you need to run your app locally.
+## 🚀 Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1ondHi0WSeMUU7zMoZ3obej8hd7ZnRrg4
+*   **Interactive Simulator**: Run simulations with custom bucket capacities, rates, and input packets. Visualize buffer usage in real-time charts.
+*   **Educational Content**: Simple explanations, flowcharts, and real-world analogies (e.g., water bucket vs. tokens).
+*   **Code Implementation**: View standard C code implementations for both algorithms, ready for lab usage.
+*   **AI-Powered Reports**: Generates a dynamic, submission-ready project report (Abstract, Conclusion, Future Scope) using **Google Gemini** based on your simulation results.
 
-## Run Locally
+## 🛠️ Tech Stack
 
-**Prerequisites:**  Node.js
+This project is built as a modern client-side Single Page Application (SPA).
 
+*   **Core Framework**: React 19 (TypeScript)
+*   **Styling**: Tailwind CSS
+*   **Visualization**: Recharts
+*   **AI Integration**: Google GenAI SDK (`@google/genai`)
+*   **Icons**: Lucide React
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## ⚙️ Configuration
+
+To use the AI Report Generator features, you need a valid Google Gemini API Key.
+
+1.  Get your API Key from [Google AI Studio](https://aistudio.google.com/).
+2.  Open the `.env` file in the project root.
+3.  Paste your key as shown below.
+
+## 📚 Project Structure
+
+*   `index.tsx`: Application entry point.
+*   `App.tsx`: Main layout and tab navigation.
+*   `components/`:
+    *   `Simulator.tsx`: Core simulation logic and chart visualization.
+    *   `Report.tsx`: AI component that analyzes simulation data to write reports.
+    *   `Implementation.tsx`: C code viewer for lab reference.
+    *   `Overview.tsx` & `Explanation.tsx`: Educational modules.
+*   `utils/simulation.ts`: Pure TypeScript implementation of the shaping algorithms.
+
+## 📝 License
+
+Free for educational use. Perfect for Computer Networks lab mini-projects.
