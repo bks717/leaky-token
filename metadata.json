@@ -1,0 +1,5 @@
+{
+  "name": "NetShape - Traffic Shaping Simulator",
+  "description": "A comprehensive Leaky Bucket and Token Bucket algorithm simulator for Computer Networks students.",
+  "requestFramePermissions": []
+}
